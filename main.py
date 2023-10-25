@@ -12,3 +12,6 @@ class App:
         self.player = Player()
         self.voxel_render = VoxelRender(self)
         
+    def update(self):
+        self.voxel_render.update()
+        
