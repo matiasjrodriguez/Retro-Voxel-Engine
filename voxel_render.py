@@ -1,5 +1,15 @@
+import pygame
 import numpy
 import math
+
+height_map_img = pygame.image.load('img/height_map.jpg')
+height_map = pygame.surfarray.array3d(height_map_img)
+
+color_map_img = pygame.image.load('img/color_map.jpg')
+color_map = pygame.surfarray.array3d(color_map_img)
+
+map_height = len(height_map[0])
+map_width = len(height_map)
 
 class VoxelRender:
     def __init__(self, app):
