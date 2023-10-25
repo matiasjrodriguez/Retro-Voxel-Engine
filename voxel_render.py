@@ -11,4 +11,5 @@ class VoxelRender:
         self.ray_distance = 2000
         self.scale_height = 620
         self.screen_array = numpy.full((app.width, app.height, 3), (0, 0, 0))
+        self.player = app.player
         
