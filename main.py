@@ -8,7 +8,7 @@ class App:
         self.height = 450
         self.res = self.width, self.height
         self.screen = pygame.display.set_mode(self.res)
-        self.clock = pygame.time.clock()
+        self.clock = pygame.time.Clock()
         self.player = Player()
         self.voxel_render = VoxelRender(self)
         
