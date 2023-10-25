@@ -1,3 +1,4 @@
+from voxel_render import VoxelRender
 from player import Player
 import pygame
 
@@ -9,4 +10,5 @@ class App:
         self.screen = pygame.display.set_mode(self.res)
         self.clock = pygame.time.clock()
         self.player = Player()
+        self.voxel_render = VoxelRender(self)
         
