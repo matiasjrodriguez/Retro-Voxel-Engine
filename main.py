@@ -15,3 +15,7 @@ class App:
     def update(self):
         self.voxel_render.update()
         
+    def draw(self):
+        self.voxel_render.draw()
+        pygame.display.flip()
+        
