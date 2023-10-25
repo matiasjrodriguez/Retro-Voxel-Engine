@@ -19,3 +19,15 @@ class App:
         self.voxel_render.draw()
         pygame.display.flip()
         
+    def run(self):
+        run = True
+        while run:
+            self.update()
+            self.draw()
+                
+            for i in pygame.event.get():
+                if i.type == pygame.QUIT:
+                    run = False
+                    
+            self.clock.tick(60)
+            pygame.display.set_caption(f'FPS: {self.clock.get_fps()}')
