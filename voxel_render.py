@@ -59,3 +59,6 @@ class VoxelRender:
                                         self.app.height, self.delta_angle, self.ray_distance,
                                         self.h_fov, self.scale_height)
         
+    def draw(self):
+        self.app.screen.blit(pygame.surfarray.make_surface(self.screen_array), (0,0))
+        
