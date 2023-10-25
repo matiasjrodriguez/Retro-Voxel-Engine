@@ -1,3 +1,4 @@
+from player import Player
 import pygame
 
 class App:
@@ -7,3 +8,5 @@ class App:
         self.res = self.width, self.height
         self.screen = pygame.display.set_mode(self.res)
         self.clock = pygame.time.clock()
+        self.player = Player()
+        
