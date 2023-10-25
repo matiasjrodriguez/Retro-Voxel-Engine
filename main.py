@@ -13,6 +13,7 @@ class App:
         self.voxel_render = VoxelRender(self)
         
     def update(self):
+        self.player.update()
         self.voxel_render.update()
         
     def draw(self):
