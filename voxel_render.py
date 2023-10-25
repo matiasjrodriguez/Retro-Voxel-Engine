@@ -53,3 +53,9 @@ class VoxelRender:
         self.screen_array = numpy.full((app.width, app.height, 3), (0, 0, 0))
         self.player = app.player
         
+    def update(self):
+        self.screen_array = ray_casting(self.screen_array, self.player.pos, self.player.angle,
+                                        self.player.height, self.player.pitch, self.app.width,
+                                        self.app.height, self.delta_angle, self.ray_distance,
+                                        self.h_fov, self.scale_height)
+        
